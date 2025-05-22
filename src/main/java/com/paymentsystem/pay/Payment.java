@@ -6,6 +6,7 @@ public class Payment {
     private String expirationDate;
     private String cvv;
     private String amount;
+    private String paymentMethod;
 
     public Payment(){
     }
