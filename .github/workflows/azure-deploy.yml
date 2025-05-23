@@ -22,6 +22,7 @@ jobs:
 
       - name: Build with Maven
         run: mvn clean package
+        working-directory: AzurePaymentApp/.github/workflows/azure-deploy.yml
 
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
