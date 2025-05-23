@@ -5,8 +5,7 @@ public class Payment {
     private String cardHolderName;
     private String expirationDate;
     private String cvv;
-    private String amount;
-    private String paymentMethod; //test1
+    private String amount; ///testing if changes work with CI/CD
 
     public Payment(){
     }
