@@ -2,7 +2,9 @@ package com.paymentsystem.pay;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.springframework.stereotype.Service;
 
+@Service
 public class PaymentService {
     private final List<Payment> authorizedPayments = new ArrayList<>();
 
