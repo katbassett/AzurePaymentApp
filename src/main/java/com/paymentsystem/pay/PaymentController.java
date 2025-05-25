@@ -11,6 +11,12 @@ import jakarta.servlet.http.HttpServletResponse;
 @RestController
 public class PaymentController {
 
+    private final PaymentService paymentService;
+
+    public PaymentController(PaymentService paymentService) {
+        this.paymentService = paymentService;
+    }
+
     @GetMapping("/")
     public void redirectToPaymentPage(HttpServletResponse response) throws IOException {
         response.sendRedirect("/payment.html");
@@ -24,6 +30,8 @@ public class PaymentController {
             response.sendRedirect("/declined.html");
             return ResponseEntity.status(302).header("Location", "/declined.html").body("Redirecting to declined page");
         } else {
+            paymentService.addAuthorizedPayment(payment);
+
             response.sendRedirect("/confirmation.html");
             return ResponseEntity.status(302).header("Location", "/confirmation.html").body("Redirecting to confirmation page");
         }
