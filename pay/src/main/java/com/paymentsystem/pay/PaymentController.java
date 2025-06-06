@@ -7,6 +7,8 @@ import java.io.IOException;
 import org.springframework.http.ResponseEntity;
 import jakarta.servlet.http.HttpServletResponse;
 
+//* Author: Kat Bassett */
+
 
 @RestController
 public class PaymentController {

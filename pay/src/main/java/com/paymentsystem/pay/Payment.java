@@ -1,5 +1,7 @@
 package com.paymentsystem.pay;
 
+//* Author: Kat Bassett */
+
 public class Payment {
     private String cardNumber;
     private String cardHolderName;

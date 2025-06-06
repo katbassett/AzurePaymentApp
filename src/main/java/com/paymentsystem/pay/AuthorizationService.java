@@ -4,6 +4,8 @@ import java.util.*;
 
 import org.springframework.stereotype.Service;
 
+//* Author: Kat Bassett */
+
 
 @Service
 public class AuthorizationService {
